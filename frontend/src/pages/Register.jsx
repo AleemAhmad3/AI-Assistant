@@ -35,7 +35,7 @@ const Register = () => {
     }
 
     try {
-      await axios.post("http://localhost:3000/api/v1/auth/register", { username, email, password });
+      await axios.post("https://ai-assistant-backend-m0ul.onrender.com/api/v1/auth/register", { username, email, password });
       toast.success("User Registered Successfully");
       navigate("/login");
     } catch (err) {

@@ -12,7 +12,7 @@ const Navbar = () => {
   // Handle logout
   const handleLogout = async () => {
     try {
-      await axios.post("http://localhost:3000/api/v1/auth/logout");
+      await axios.post("https://ai-assistant-backend-m0ul.onrender.com/api/v1/auth/logout");
       localStorage.removeItem("authToken");
       toast.success("Logged out successfully");
       navigate("/login");

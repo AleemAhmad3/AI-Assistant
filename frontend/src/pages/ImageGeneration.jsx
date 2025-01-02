@@ -28,7 +28,7 @@ const ScifiImage = () => {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/v1/openai/scifi-image",
+        "https://ai-assistant-backend-m0ul.onrender.com/api/v1/openai/scifi-image",
         { text }
       );
       setImage(data);

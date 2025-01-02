@@ -27,7 +27,7 @@ const ChatBot = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:3000/api/v1/openai/chatbot", { text });
+      const { data } = await axios.post("https://ai-assistant-backend-m0ul.onrender.com/api/v1/openai/chatbot", { text });
       setResponse(data); // Assuming the response comes back correctly from the backend
     } catch (err) {
       if (err.response && err.response.data && err.response.data.message) {

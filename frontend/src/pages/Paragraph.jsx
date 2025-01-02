@@ -26,7 +26,7 @@ const Paragraph = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("http://localhost:3000/api/v1/openai/paragraph", { text });
+      const { data } = await axios.post("https://ai-assistant-backend-m0ul.onrender.com/api/v1/openai/paragraph", { text });
       setPara(data);
     } catch (err) {
       if (err.response && err.response.data.error) {
